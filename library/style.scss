@@ -15,6 +15,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  background-color: #0c0c0e;
+}
+
 .container {
   max-width: 1440px;
   padding: 0 20px;
@@ -63,5 +67,35 @@ html {
       text-decoration: underline;
       text-underline-offset: 5px;
     }
+  }
+}
+
+.welcome {
+  position: relative;
+  height: 600px;
+  background: linear-gradient(
+      180deg,
+      #0c0c0e 0%,
+      #0c0c0e 0.01%,
+      rgba(18, 18, 21, 0.1) 100%
+    ),
+    url('./assets/welcome-bg.png') no-repeat center center;
+
+  &__title {
+    box-sizing: content-box;
+    position: absolute;
+    top: 220px;
+    left: 240px;
+    width: 520px;
+    color: $text-white;
+    padding: 35px 40px;
+    text-align: center;
+    background-color: $bg-black;
+    font-size: 4rem;
+    font-family: $font-forum;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 5rem;
+    letter-spacing: 0.3rem;
   }
 }
