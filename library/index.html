@@ -66,7 +66,7 @@
       </section>
       <section class="about">
         <div class="container about__container">
-          <h2 class="about__title">About</h2>
+          <h2 class="about__title title">About</h2>
           <p class="about__description">
             The Brooklyn Library is a free workspace, a large number of books
             and a cozy coffee shop inside
@@ -98,6 +98,132 @@
             <div class="btn-wrapper">
               <div class="about__carousel-btn"></div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section class="favorites">
+        <div class="container favorites__container">
+          <h2 class="favorites__title title">Favorites</h2>
+          <p class="favorites__description">Pick favorites of season</p>
+          <div class="picker">
+            <div class="picker__wrapper">
+              <input
+                type="radio"
+                name="picker"
+                id="winter"
+                class="picker__input"
+                checked
+              />
+              <label for="winter" class="picker__label">Winter</label>
+            </div>
+            <div class="picker__wrapper">
+              <input
+                type="radio"
+                name="picker"
+                id="spring"
+                class="picker__input"
+              />
+              <label for="spring" class="picker__label">Spring</label>
+            </div>
+            <div class="picker__wrapper">
+              <input
+                type="radio"
+                name="picker"
+                id="summer"
+                class="picker__input"
+              />
+              <label for="summer" class="picker__label">Summer</label>
+            </div>
+            <div class="picker__wrapper">
+              <input
+                type="radio"
+                name="picker"
+                id="autumn"
+                class="picker__input"
+              />
+              <label for="autumn" class="picker__label">Autumn</label>
+            </div>
+          </div>
+          <div class="favorites__card-wrapper">
+            <article class="favorites__card card">
+              <p class="card__staff">Staff Picks</p>
+              <p class="card__title">The Book Eaters</p>
+              <p class="card__title card__title-author">By Sunyi Dean</p>
+              <p class="card__description">
+                An unusual sci-fi story about a book eater woman who tries
+                desperately to save her dangerous mind-eater son from tradition
+                and certain death. Complete with dysfunctional family values,
+                light Sapphic romance, and a strong, complex protagonist. Not
+                for the faint of heart.
+              </p>
+              <div class="card__btn-wrapper">
+                <button class="card__btn">Buy</button>
+              </div>
+              <img
+                class="card__img"
+                src="./assets/book-the-book-eaters.jpg"
+                alt="book-the-book-eaters cover"
+              />
+            </article>
+            <article class="favorites__card card">
+              <p class="card__staff">Staff Picks</p>
+              <p class="card__title">Cackle</p>
+              <p class="card__title card__title-author">By Rachel Harrison</p>
+              <p class="card__description">
+                Are your Halloween movies of choice The Witches of Eastwick and
+                Practical Magic? Look no further than here - where a woman
+                recovering from a breakup moves to a quaint town in upstate New
+                York and befriends a beautiful witch.
+              </p>
+              <div class="card__btn-wrapper">
+                <button class="card__btn">Buy</button>
+              </div>
+              <img
+                class="card__img"
+                src="./assets/book-cackle.jpg"
+                alt="book cacle cover"
+              />
+            </article>
+            <article class="favorites__card card">
+              <p class="card__staff">Staff Picks</p>
+              <p class="card__title">Dante: Poet of the Secular World</p>
+              <p class="card__title card__title-author">By Erich Auerbach</p>
+              <p class="card__description">
+                Auerbach's engaging book places the 'Comedy' within the
+                tradition of epic, tragedy, and philosophy in general, arguing
+                for Dante's uniqueness as one who raised the individual and his
+                drama of soul into something of divine significance—an inspired
+                introduction to Dante's main themes.
+              </p>
+              <div class="card__btn-wrapper">
+                <button class="card__btn">Buy</button>
+              </div>
+              <img
+                class="card__img"
+                src="./assets/book-dante.png"
+                alt="book dante by Erich Auerbach cover"
+              />
+            </article>
+            <article class="favorites__card card">
+              <p class="card__staff">Staff Picks</p>
+              <p class="card__title">The Last Queen</p>
+              <p class="card__title card__title-author">By Clive Irving</p>
+              <p class="card__description">
+                A timely and revelatory new biography of Queen Elizabeth (and
+                her family) exploring how the Windsors have evolved and thrived
+                as the modern world has changed around them.
+              </p>
+              <div class="card__btn-wrapper">
+                <button class="card__btn card__btn_disabled" disabled>
+                  Own
+                </button>
+              </div>
+              <img
+                class="card__img"
+                src="./assets/book-last-queen.png"
+                alt="the last queen book cover"
+              />
+            </article>
           </div>
         </div>
       </section>
