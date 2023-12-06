@@ -189,7 +189,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 40px 260px;
-    margin-bottom: 60px;
+    // margin-bottom: 60px;
   }
 }
 
@@ -321,5 +321,75 @@ body {
       cursor: pointer;
       width: 90px;
     }
+  }
+}
+
+.coffeeshop {
+  background-color: $bg-white;
+  &__title {
+    padding-top: 60px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  &__description {
+    color: $text-black;
+    text-align: center;
+    font-family: $font-inter;
+    font-size: 2rem;
+    line-height: 4rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 20px;
+  }
+}
+
+.price {
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    color: $active-brown;
+    margin-bottom: 40px;
+    &::after {
+      display: none;
+    }
+  }
+
+  &__list-right {
+    text-align: end;
+  }
+  &__title-right {
+    text-align: end;
+  }
+
+  &__list-item {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 40px;
+    text-wrap: nowrap;
+  }
+  &__list-title {
+    width: 199px;
+    color: $text-black;
+    font-family: $font-inter;
+    font-size: 2rem;
+    line-height: 4rem;
+    letter-spacing: 0.2rem;
+    text-transform: capitalize;
+  }
+  &__list-line {
+    display: inline-block;
+    width: 100px;
+    height: 1px;
+    background-color: $active-brown;
+  }
+  &__list-price {
+    color: #000;
+    font-family: $font-forum;
+    font-size: 2rem;
+    line-height: 4rem;
+    letter-spacing: 0.2rem;
+    text-transform: capitalize;
   }
 }
