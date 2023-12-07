@@ -431,6 +431,9 @@ body {
     letter-spacing: 0.2rem;
     margin-bottom: 20px;
     text-transform: capitalize;
+    a {
+      color: inherit;
+    }
   }
   &__staff-subtitle {
     margin-top: 40px;
