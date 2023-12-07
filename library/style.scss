@@ -393,3 +393,47 @@ body {
     text-transform: capitalize;
   }
 }
+
+.contacts {
+  background-color: $bg-white;
+  &__title {
+    text-align: center;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -20px;
+      border-bottom: 1px solid $bg-black;
+      width: 50px;
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__subtitle {
+    color: $text-black;
+    font-family: $font-inter;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 4rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 40px;
+    text-transform: capitalize;
+  }
+  &__description {
+    color: $text-black;
+    font-family: $font-inter;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 4rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+  }
+  &__staff-subtitle {
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+}
