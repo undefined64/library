@@ -408,4 +408,164 @@ body {
 .contacts__staff-subtitle {
   margin-top: 40px;
   margin-bottom: 20px;
+}
+
+.libcard {
+  background-color: white;
+  padding-top: 60px;
+}
+.libcard__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.libcard__title {
+  text-align: center;
+}
+.libcard__title::after {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  border-bottom: 1px solid #0c0c0e;
+  width: 50px;
+  left: 50%;
+  transform: translate(-50%);
+}
+.libcard__signup {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  align-items: flex-end;
+}
+.libcard__signup-title {
+  color: #000;
+  text-align: center;
+  font-family: "Forum", serif;
+  font-weight: 400;
+  font-size: 3rem;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.06rem;
+}
+.libcard__signup-description {
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  font-style: normal;
+  line-height: 4rem;
+  letter-spacing: 0.04rem;
+  text-align: right;
+  max-width: 456px;
+}
+.libcard__signup-btns {
+  display: flex;
+  gap: 20px;
+}
+.libcard__signup-btn {
+  color: #0c0c0e;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.1rem;
+  background-color: white;
+  padding: 9px 15px;
+  border-radius: 2px;
+  border: 1px solid #0c0c0e;
+  transition: ease-in 0.15s;
+}
+.libcard__signup-btn:hover {
+  background-color: #bb945f;
+  border-color: #bb945f;
+}
+
+.finder__title {
+  text-align: center;
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.06rem;
+  margin-bottom: 30px;
+}
+.finder__form {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #bb945f;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.finder__form-wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: #bb945f;
+  padding: 20px 20px 0 20px;
+  margin: 20px 20px 20px 20px;
+}
+.finder__label {
+  color: #000;
+  font-family: Forum;
+  font-size: 3rem;
+  line-height: 5rem;
+  letter-spacing: 0.06rem;
+  margin-bottom: 20px;
+}
+.finder__input {
+  color: #bb945f;
+  font-family: "Forum", serif;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 5rem;
+  letter-spacing: 0.06rem;
+  padding: 8px 0 8px 20px;
+  margin-bottom: 25px;
+  width: 520px;
+  height: 66px;
+  border-radius: 10px;
+  border-color: transparent;
+}
+.finder__input:focus {
+  outline: none;
+}
+.finder__input::-moz-placeholder {
+  color: #8e8e8e;
+  font-family: "Forum", serif;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 5rem;
+  letter-spacing: 0.06rem;
+}
+.finder__input::placeholder {
+  color: #8e8e8e;
+  font-family: "Forum", serif;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 5rem;
+  letter-spacing: 0.06rem;
+}
+.finder__input::-webkit-outer-spin-button, .finder__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.finder__submit {
+  background-color: white;
+  color: #0c0c0e;
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.1rem;
+  display: inline-block;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-self: center;
+  padding: 10px 40px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  transition: ease-in 0.15s;
+}
+.finder__submit:hover {
+  background-color: #bb945f;
+  border-color: #bb945f;
 }/*# sourceMappingURL=style.css.map */

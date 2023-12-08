@@ -6,6 +6,7 @@ $text-mild-black: #0c0c0e;
 $text-white: white;
 $text-black: #000;
 $active-brown: #bb945f;
+$form-placeholder: #8e8e8e;
 
 *,
 h1 {
@@ -438,5 +439,160 @@ body {
   &__staff-subtitle {
     margin-top: 40px;
     margin-bottom: 20px;
+  }
+}
+
+.libcard {
+  background-color: $bg-white;
+  padding-top: 60px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    text-align: center;
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -20px;
+      border-bottom: 1px solid $bg-black;
+      width: 50px;
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
+  &__signup {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    align-items: flex-end;
+    &-title {
+      color: $text-black;
+      text-align: center;
+      font-family: $font-forum;
+      font-weight: 400;
+      font-size: 3rem;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 0.06rem;
+    }
+    &-description {
+      color: $text-black;
+      font-family: $font-inter;
+      font-size: 2rem;
+      font-style: normal;
+      line-height: 4rem;
+      letter-spacing: 0.04rem;
+      text-align: right;
+      max-width: 456px;
+    }
+    &-btns {
+      display: flex;
+      gap: 20px;
+    }
+    &-btn {
+      color: $text-mild-black;
+      font-family: $font-inter;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.1rem;
+      background-color: $bg-white;
+      padding: 9px 15px;
+      border-radius: 2px;
+      border: 1px solid $bg-black;
+      transition: ease-in 0.15s;
+      &:hover {
+        background-color: $active-brown;
+        border-color: $active-brown;
+      }
+    }
+  }
+}
+
+.finder {
+  &__title {
+    text-align: center;
+    color: $text-black;
+    font-family: $font-inter;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.06rem;
+    margin-bottom: 30px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid $active-brown;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      background-color: $active-brown;
+      padding: 20px 20px 0 20px;
+      margin: 20px 20px 20px 20px;
+    }
+  }
+  &__label {
+    color: $text-black;
+    font-family: Forum;
+    font-size: 3rem;
+    line-height: 5rem;
+    letter-spacing: 0.06rem;
+    margin-bottom: 20px;
+  }
+  &__input {
+    color: $active-brown;
+    font-family: $font-forum;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 5rem;
+    letter-spacing: 0.06rem;
+    padding: 8px 0 8px 20px;
+    margin-bottom: 25px;
+    width: 520px;
+    height: 66px;
+    border-radius: 10px;
+    border-color: transparent;
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      color: $form-placeholder;
+      font-family: $font-forum;
+      font-size: 3rem;
+      font-weight: 400;
+      line-height: 5rem;
+      letter-spacing: 0.06rem;
+    }
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+  &__submit {
+    background-color: $bg-white;
+    color: $bg-black;
+    font-family: $font-inter;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.1rem;
+    display: inline-block;
+    width: fit-content;
+    align-self: center;
+    padding: 10px 40px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    transition: ease-in 0.15s;
+    &:hover {
+      background-color: $active-brown;
+      border-color: $active-brown;
+    }
   }
 }
