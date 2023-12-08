@@ -585,6 +585,10 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 2rem;
+  margin-bottom: 20px;
+}
+.footer__contacts-list {
+  display: flex;
 }
 .footer__contacts-address {
   width: 229px;

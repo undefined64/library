@@ -611,6 +611,10 @@ body {
     font-style: normal;
     font-weight: 400;
     line-height: 2rem;
+    margin-bottom: 20px;
+    &-list {
+      display: flex;
+    }
     &-address {
       width: 229px;
       display: inline-block;
