@@ -494,6 +494,7 @@ body {
   flex-direction: column;
   border: 3px solid #bb945f;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-bottom: 41px;
 }
 .finder__form-wrapper {
   display: flex;
@@ -568,4 +569,59 @@ body {
 .finder__submit:hover {
   background-color: #bb945f;
   border-color: #bb945f;
+}
+
+.footer {
+  margin-top: 20px;
+  color: white;
+}
+.footer__contacts {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2rem;
+}
+.footer__contacts-address {
+  width: 229px;
+  display: inline-block;
+  color: white;
+  margin-bottom: 18px;
+}
+.footer__contacts-links {
+  margin-bottom: 15px;
+}
+.footer__contacts-link {
+  margin-right: 15px;
+}
+.footer__contacts-link:hover path {
+  fill: #bb945f;
+}
+.footer__contacts-schedule__description {
+  text-align: right;
+  margin-bottom: 10px;
+}
+.footer__line {
+  margin-bottom: 45px;
+}
+.footer__school {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 45px;
+}
+.footer__school-link {
+  color: white;
+  transition: ease-in 0.15s;
+}
+.footer__school-link:hover {
+  color: #bb945f;
 }/*# sourceMappingURL=style.css.map */

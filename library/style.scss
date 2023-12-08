@@ -528,6 +528,7 @@ body {
     flex-direction: column;
     border: 3px solid $active-brown;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 41px;
     &-wrapper {
       display: flex;
       flex-direction: column;
@@ -593,6 +594,61 @@ body {
     &:hover {
       background-color: $active-brown;
       border-color: $active-brown;
+    }
+  }
+}
+
+.footer {
+  margin-top: 20px;
+  color: $text-white;
+  &__contacts {
+    display: flex;
+    justify-content: space-between;
+    color: $text-white;
+    font-family: $font-inter;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+    &-address {
+      width: 229px;
+      display: inline-block;
+      color: white;
+      margin-bottom: 18px;
+    }
+    &-links {
+      margin-bottom: 15px;
+    }
+    &-link {
+      margin-right: 15px;
+      &:hover path {
+        fill: $active-brown;
+      }
+    }
+    &-schedule__description {
+      text-align: right;
+      margin-bottom: 10px;
+    }
+  }
+  &__line {
+    margin-bottom: 45px;
+  }
+  &__school {
+    display: flex;
+    justify-content: space-between;
+    color: $text-white;
+    font-family: $font-inter;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 45px;
+    &-link {
+      color: $text-white;
+      transition: ease-in 0.15s;
+      &:hover {
+        color: $active-brown;
+      }
     }
   }
 }
