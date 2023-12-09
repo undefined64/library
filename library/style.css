@@ -107,6 +107,11 @@ body {
   gap: 25px;
   margin-bottom: 35px;
 }
+@media (max-width: 1430px) {
+  .about__gallery-img_3 {
+    display: none;
+  }
+}
 .about__carousel {
   display: flex;
   margin-bottom: 35px;
@@ -124,6 +129,17 @@ body {
 .btn-wrapper {
   padding: 5px;
   cursor: pointer;
+}
+.btn-wrapper_4 {
+  display: none;
+}
+@media (max-width: 1430px) {
+  .btn-wrapper_4 {
+    display: block;
+  }
+}
+.btn-wrapper_5 {
+  display: none;
 }
 
 .title {
@@ -165,7 +181,22 @@ body {
 .favorites__card-wrapper {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px 260px;
+  -moz-column-gap: 260px;
+       column-gap: 260px;
+  row-gap: 40px;
+}
+@media (max-width: 1430px) {
+  .favorites__card-wrapper {
+    -moz-column-gap: clamp(30px, 7%, 10%);
+         column-gap: clamp(30px, 7%, 10%);
+    justify-content: center;
+  }
+}
+@media (max-width: 1279px) {
+  .favorites__card-wrapper {
+    flex-direction: column;
+    align-content: center;
+  }
 }
 
 .picker {
