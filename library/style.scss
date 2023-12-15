@@ -166,9 +166,6 @@ body {
     text-transform: uppercase;
     line-height: 5rem;
     letter-spacing: 0.3rem;
-    @media (max-width: 768px) {
-      // top: 235px;
-    }
   }
 }
 
@@ -195,6 +192,17 @@ body {
     display: flex;
     gap: 25px;
     margin-bottom: 35px;
+    @media (max-width: 1006px) {
+      gap: 65px;
+      margin-bottom: 20px;
+    }
+    &-arrow {
+      display: none;
+      margin-top: 40px;
+      @media (max-width: 1006px) {
+        display: block;
+      }
+    }
     &-img_3 {
       @media (max-width: 1430px) {
         display: none;
@@ -343,6 +351,9 @@ body {
   height: 555px;
   border: 1px solid $text-black;
   padding: 15px 175px 15px 20px;
+  @media (max-width: 768px) {
+    margin-left: -30px;
+  }
   &__staff {
     position: relative;
     color: $text-black;
