@@ -28,6 +28,12 @@ body {
   justify-content: space-between;
   padding-top: 20px;
 }
+@media (max-width: 768px) {
+  .header__container {
+    align-items: baseline;
+    padding-bottom: 10px;
+  }
+}
 .header__content {
   display: flex;
   align-items: center;
@@ -121,6 +127,11 @@ body {
   height: 600px;
   background: linear-gradient(180deg, #0c0c0e 0%, #0c0c0e 0.01%, rgba(18, 18, 21, 0.1) 100%), url("./assets/welcome-bg.png") no-repeat center center;
 }
+@media (max-width: 768px) {
+  .welcome {
+    background: linear-gradient(180deg, #0c0c0e 0%, #0c0c0e 0.01%, rgba(18, 18, 21, 0.1) 100%), url("./assets/welcome-mobile.png") no-repeat center center;
+  }
+}
 .welcome__title {
   box-sizing: content-box;
   position: absolute;
@@ -138,7 +149,6 @@ body {
   line-height: 5rem;
   letter-spacing: 0.3rem;
 }
-
 .about {
   background-color: white;
 }

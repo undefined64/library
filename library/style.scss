@@ -37,6 +37,10 @@ body {
     display: flex;
     justify-content: space-between;
     padding-top: 20px;
+    @media (max-width: 768px) {
+      align-items: baseline;
+      padding-bottom: 10px;
+    }
   }
 
   &__content {
@@ -136,6 +140,15 @@ body {
       rgba(18, 18, 21, 0.1) 100%
     ),
     url('./assets/welcome-bg.png') no-repeat center center;
+  @media (max-width: 768px) {
+    background: linear-gradient(
+        180deg,
+        #0c0c0e 0%,
+        #0c0c0e 0.01%,
+        rgba(18, 18, 21, 0.1) 100%
+      ),
+      url('./assets/welcome-mobile.png') no-repeat center center;
+  }
 
   &__title {
     box-sizing: content-box;
@@ -153,6 +166,9 @@ body {
     text-transform: uppercase;
     line-height: 5rem;
     letter-spacing: 0.3rem;
+    @media (max-width: 768px) {
+      // top: 235px;
+    }
   }
 }
 
