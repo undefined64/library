@@ -576,7 +576,7 @@ body {
 }
 @media (max-width: 886px) {
   .contacts__map {
-    width: 696px;
+    width: 90%;
     align-self: center;
   }
 }
