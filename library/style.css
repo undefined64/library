@@ -407,6 +407,12 @@ body {
     width: 85%;
   }
 }
+@media (max-width: 500px) {
+  .card {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
 .card__staff {
   position: relative;
   color: #000;
@@ -433,6 +439,11 @@ body {
   letter-spacing: 0.19rem;
   text-transform: uppercase;
 }
+@media (max-width: 500px) {
+  .card__title {
+    line-height: 3.5rem;
+  }
+}
 .card__title-author {
   text-transform: capitalize;
   margin-bottom: 20px;
@@ -451,6 +462,15 @@ body {
 @media (max-width: 600px) {
   .card__description {
     line-height: 3.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .card__description {
+    font-size: 12px;
+    line-height: 3rem;
+    letter-spacing: 0.15rem;
+    width: 190%;
+    margin-bottom: 20px;
   }
 }
 .card__img {
