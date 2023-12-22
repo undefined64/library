@@ -292,6 +292,11 @@ body {
   left: 50%;
   transform: translate(-50%);
 }
+@media (max-width: 500px) {
+  .title {
+    font-size: 3.5rem;
+  }
+}
 
 .favorites {
   background-color: white;
@@ -442,6 +447,7 @@ body {
 @media (max-width: 500px) {
   .card__title {
     line-height: 3.5rem;
+    width: 150%;
   }
 }
 .card__title-author {
@@ -539,6 +545,12 @@ body {
     letter-spacing: 0.195rem;
   }
 }
+@media (max-width: 500px) {
+  .coffeeshop__description {
+    font-size: 1.8rem;
+    line-height: 3.6rem;
+  }
+}
 
 .price-wrapper {
   display: flex;
@@ -563,7 +575,7 @@ body {
   .price__list-right {
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: flex-end;
   }
 }
 .price__title-right {
@@ -581,6 +593,11 @@ body {
   margin-bottom: 40px;
   text-wrap: nowrap;
 }
+@media (max-width: 500px) {
+  .price__list-item {
+    gap: 30px;
+  }
+}
 .price__list-title {
   width: 199px;
   color: #000;
@@ -589,6 +606,12 @@ body {
   line-height: 4rem;
   letter-spacing: 0.2rem;
   text-transform: capitalize;
+}
+@media (max-width: 450px) {
+  .price__list-title {
+    font-size: 1.8rem;
+    letter-spacing: 0.15rem;
+  }
 }
 .price__list-line {
   display: inline-block;
