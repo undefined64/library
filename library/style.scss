@@ -628,6 +628,9 @@ body {
     letter-spacing: 0.2rem;
     margin-bottom: 40px;
     text-transform: capitalize;
+    @media (max-width: 500px) {
+      margin-bottom: 20px;
+    }
   }
   &__description {
     color: $text-black;
@@ -697,6 +700,9 @@ body {
       display: flex;
       align-items: center;
     }
+    @media (max-width: 530px) {
+      gap: 25px;
+    }
     &-title {
       color: $text-black;
       text-align: center;
@@ -756,6 +762,11 @@ body {
   @media (max-width: 1066px) {
     align-self: center;
   }
+  @media (max-width: 650px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   &__title {
     text-align: center;
     color: $text-black;
@@ -776,6 +787,15 @@ body {
     @media (max-width: 768px) {
       margin-bottom: 15px;
     }
+    @media (max-width: 650px) {
+      max-width: 85%;
+    }
+    @media (max-width: 530px) {
+      border: none;
+      box-shadow: none;
+      margin: 10px;
+      width: 430px;
+    }
 
     &-wrapper {
       display: flex;
@@ -783,6 +803,11 @@ body {
       background-color: $active-brown;
       padding: 20px 20px 0 20px;
       margin: 20px 20px 20px 20px;
+      @media (max-width: 530px) {
+        padding-bottom: 70px;
+        border-radius: 5px;
+        border: 1px solid darken($color: $active-brown, $amount: 10%);
+      }
     }
   }
   &__label {
@@ -823,6 +848,9 @@ body {
       -webkit-appearance: none;
       margin: 0;
     }
+    @media (max-width: 650px) {
+      width: 100%;
+    }
   }
   &__submit {
     background-color: $bg-white;
@@ -842,6 +870,11 @@ body {
     &:hover {
       background-color: $active-brown;
       border-color: $active-brown;
+    }
+    @media (max-width: 530px) {
+      margin-top: -90px;
+      border-radius: 5px;
+      border-color: darken($color: $active-brown, $amount: 10%);
     }
   }
 }
@@ -902,5 +935,11 @@ body {
         color: $active-brown;
       }
     }
+  }
+}
+
+@media (max-width: 530px) {
+  .footer__school-link:first-of-type {
+    display: none;
   }
 }

@@ -662,6 +662,11 @@ body {
   margin-bottom: 40px;
   text-transform: capitalize;
 }
+@media (max-width: 500px) {
+  .contacts__subtitle {
+    margin-bottom: 20px;
+  }
+}
 .contacts__description {
   color: #000;
   font-family: "Inter", sans-serif;
@@ -738,6 +743,11 @@ body {
     align-items: center;
   }
 }
+@media (max-width: 530px) {
+  .libcard__signup {
+    gap: 25px;
+  }
+}
 .libcard__signup-title {
   color: #000;
   text-align: center;
@@ -802,6 +812,13 @@ body {
     align-self: center;
   }
 }
+@media (max-width: 650px) {
+  .finder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .finder__title {
   text-align: center;
   color: #000;
@@ -825,12 +842,32 @@ body {
     margin-bottom: 15px;
   }
 }
+@media (max-width: 650px) {
+  .finder__form {
+    max-width: 85%;
+  }
+}
+@media (max-width: 530px) {
+  .finder__form {
+    border: none;
+    box-shadow: none;
+    margin: 10px;
+    width: 430px;
+  }
+}
 .finder__form-wrapper {
   display: flex;
   flex-direction: column;
   background-color: #bb945f;
   padding: 20px 20px 0 20px;
   margin: 20px 20px 20px 20px;
+}
+@media (max-width: 530px) {
+  .finder__form-wrapper {
+    padding-bottom: 70px;
+    border-radius: 5px;
+    border: 1px solid #a27b45;
+  }
 }
 .finder__label {
   color: #000;
@@ -878,6 +915,11 @@ body {
   -webkit-appearance: none;
   margin: 0;
 }
+@media (max-width: 650px) {
+  .finder__input {
+    width: 100%;
+  }
+}
 .finder__submit {
   background-color: white;
   color: #0c0c0e;
@@ -898,6 +940,13 @@ body {
 .finder__submit:hover {
   background-color: #bb945f;
   border-color: #bb945f;
+}
+@media (max-width: 530px) {
+  .finder__submit {
+    margin-top: -90px;
+    border-radius: 5px;
+    border-color: #a27b45;
+  }
 }
 
 .footer {
@@ -957,4 +1006,10 @@ body {
 }
 .footer__school-link:hover {
   color: #bb945f;
+}
+
+@media (max-width: 530px) {
+  .footer__school-link:first-of-type {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
