@@ -41,6 +41,11 @@
                 <a href="#library-card" class="nav__list-link">Library Card</a>
               </li>
             </ul>
+            <button class="nav__btn">
+              <span class="nav__btn-line"></span>
+              <span class="nav__btn-line"></span>
+              <span class="nav__btn-line"></span>
+            </button>
           </nav>
           <svg
             class="header__profile-icon"
@@ -78,6 +83,11 @@
           </p>
           <div class="about__gallery">
             <img
+              src="./assets/slider-arrow-left.svg"
+              alt="left slider button arrow"
+              class="about__gallery-arrow"
+            />
+            <img
               src="./assets/gallery1.jpg"
               alt="gallery photo woman"
               class="about__gallery-img"
@@ -85,12 +95,17 @@
             <img
               src="./assets/gallery2.jpg"
               alt="gallery photo bust statues"
-              class="about__gallery-img"
+              class="about__gallery-img about__gallery-img_2"
             />
             <img
               src="./assets/gallery3.jpg"
               alt="gallery photo books"
-              class="about__gallery-img"
+              class="about__gallery-img about__gallery-img_3"
+            />
+            <img
+              src="./assets/slider-arrow-right.svg"
+              alt="left slider button arrow"
+              class="about__gallery-arrow"
             />
           </div>
           <div class="about__carousel">
@@ -101,6 +116,12 @@
               <div class="about__carousel-btn"></div>
             </div>
             <div class="btn-wrapper">
+              <div class="about__carousel-btn"></div>
+            </div>
+            <div class="btn-wrapper btn-wrapper_4">
+              <div class="about__carousel-btn"></div>
+            </div>
+            <div class="btn-wrapper btn-wrapper_5">
               <div class="about__carousel-btn"></div>
             </div>
           </div>
@@ -234,7 +255,7 @@
       </section>
       <section class="coffeeshop" id="coffee-shop">
         <div class="container coffeeshop__container">
-          <h2 class="coffeeshop__title title">Coffee shop</h2>
+          <h2 class="coffeeshop__title title">Coffee Shop</h2>
           <p class="coffeeshop__description">
             In our library, we have of cozy coffee shop, welcoming in customers
             with frothy cappuccinos and friendly conversation. you can get a
@@ -349,6 +370,7 @@
               </article>
             </div>
             <iframe
+              class="contacts__map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1069.5021789554285!2d-73.9921311438605!3d40.69580002915306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a49b649b8c3%3A0x6342a2291cea2e!2zMjg2IENhZG1hbiBQbGF6YSBXLCBCcm9va2x5biwgTlkgMTEyMDEsINCh0KjQkA!5e0!3m2!1sru!2str!4v1689102186763!5m2!1sru!2str"
               width="696"
               height="414"
@@ -495,5 +517,6 @@
         </div>
       </div>
     </footer>
+    <script src="./index.js" defer></script>
   </body>
 </html>
