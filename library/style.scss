@@ -350,6 +350,15 @@ body {
   display: flex;
   gap: 93px;
   margin-bottom: 40px;
+  @media (max-width: 850px) {
+    position: sticky;
+    top: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 3;
+    opacity: 0.9;
+    background-color: $bg-white;
+  }
   @media (max-width: 767px) {
     gap: 7%;
   }
@@ -409,6 +418,7 @@ body {
   height: 555px;
   border: 1px solid $text-black;
   padding: 15px 175px 15px 20px;
+  transition: ease-in-out 0.3s;
   @media (max-width: 768px) {
     margin-left: -30px;
   }
